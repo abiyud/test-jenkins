@@ -27,8 +27,8 @@ public class SeleniumDriver {
     	ChromeOptions options = new ChromeOptions();
     	options.addArguments("--headless", "--window-size=1920,1200","--ignore-certificate-errors");
     	
-    	
-    	System.setProperty("webdriver.chrome.driver","chromedriver");
+    	String chromeDriver = "chromedriver";
+    	System.setProperty("webdriver.chrome.driver",chromeDriver);
     	driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         waitDriver = new WebDriverWait(driver, TIMEOUT);
