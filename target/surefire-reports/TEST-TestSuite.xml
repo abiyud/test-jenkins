@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="20.957" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="22.19" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @Search-Cars"/>
     <property name="java.vm.version" value="11.0.15+8-LTS-149"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.15.jdk/Contents/Home/lib"/>
     <property name="gopherProxySet" value="false"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/167161.abiyu/Documents/Kerja/research/cucumber-java/test-cucumber"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/167161.abiyu/documents/kerja/research/cucumber-java/test-personal"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/167161.abiyu/Documents/Kerja/research/cucumber-java/test-cucumber"/>
+    <property name="user.dir" value="/Users/167161.abiyu/Documents/Kerja/research/cucumber-java/test-personal"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="java.runtime.version" value="11.0.15+8-LTS-149"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
@@ -40,12 +41,11 @@
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="11"/>
-    <property name="cucumber.filter.tags" value="@Search-Cars-Positive"/>
     <property name="user.name" value="167161.abiyu"/>
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.filter.tags=@Search-Cars-Positive"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=--tags @Search-Cars"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.15.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="feature" classname="runners.PositiveTest" time="20.957"/>
+  <testcase name="feature" classname="runners.PositiveTest" time="22.19"/>
 </testsuite>
