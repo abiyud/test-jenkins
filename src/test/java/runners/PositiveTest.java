@@ -31,7 +31,7 @@ public class PositiveTest  extends AbstractTestNGCucumberTests  {
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy_hhmmss");
 		Date curDate = new Date();
 		String strDate = sdf.format(curDate);
-		String fileName = System.getProperty("user.dir")+"\\target\\Extent_Reports\\" + strDate+".html";
+		String fileName = System.getProperty("user.dir")+"\\target\\test-personal\\Extent_Reports\\" + strDate+".html";
 		File newFile = new File(fileName);
 		ExtentCucumberFormatter.initiateExtentCucumberFormatter(newFile,false);
 		//static report name
