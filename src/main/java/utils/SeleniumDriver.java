@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -23,14 +24,19 @@ public class SeleniumDriver {
 
     private  SeleniumDriver() {
 
-    	System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-    	driver = new ChromeDriver();
+    	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--headless", "--window-size=1920,1200","--ignore-certificate-errors");
+    	
+    	
+    	System.setProperty("webdriver.chrome.driver","chromedriver");
+    	driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         waitDriver = new WebDriverWait(driver, TIMEOUT);
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         String window=driver.getWindowHandle();
         System.out.println("Window ->"+window);
+        
        
     }
 

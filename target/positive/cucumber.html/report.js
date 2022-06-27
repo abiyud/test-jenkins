@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 3248919917,
+  "duration": 1757728375,
   "status": "passed"
 });
 formatter.scenario({
@@ -50,18 +50,18 @@ formatter.match({
   "location": "SearchCarsSteps.i_am_on_the_Home_Page_of_CarsGuide_Website(String)"
 });
 formatter.result({
-  "duration": 12659674334,
+  "duration": 12048972834,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCarsSteps.i_click_sell_my_car()"
 });
 formatter.result({
-  "duration": 5336472250,
+  "duration": 1818156334,
   "status": "passed"
 });
 formatter.after({
-  "duration": 481289583,
+  "duration": 148837875,
   "status": "passed"
 });
 });
