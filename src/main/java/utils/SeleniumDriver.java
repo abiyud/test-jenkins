@@ -23,6 +23,7 @@ public class SeleniumDriver {
 
     private  SeleniumDriver() {
 
+        //test
     	System.setProperty("webdriver.chrome.driver","/chromedriver");
     	driver = new ChromeDriver();
         driver.manage().window().maximize();
